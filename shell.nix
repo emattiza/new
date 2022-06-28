@@ -10,10 +10,15 @@ mkShell {
     gitFull
     subversion
     nixfmt
+    exa
+    terraform
+    terraform-ls
   ];
 
   NIX_ENFORCE_PURITY = true;
 
   shellHook = ''
+  alias tf=terraform
+  alias lse='exa -lah'
   '';
 }
