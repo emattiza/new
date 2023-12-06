@@ -9,10 +9,7 @@ mkShell {
     direnv
     gitFull
     subversion
-    nixfmt
-    exa
-    terraform
-    terraform-ls
+    eza
   ];
 
   NIX_ENFORCE_PURITY = true;
